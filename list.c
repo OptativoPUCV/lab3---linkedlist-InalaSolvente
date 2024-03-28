@@ -52,7 +52,7 @@ void * lastList(List * list) {
   Node *aux = list->head;
   while (aux -> next != NULL){
     aux = aux -> next;}
-  return aux;
+  return aux->data;
 }
 
 void * prevList(List * list) {
