@@ -34,9 +34,9 @@ List * createList() {
 }
 
 void * firstList(List * list) {
-  Node*aux = list->head;
   if (list == NULL) return NULL;
-  else return aux->data;
+  Node*aux = list->head;
+  return aux;
 }
 
 void * nextList(List * list) {
