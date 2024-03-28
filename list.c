@@ -42,10 +42,14 @@ void * nextList(List * list) {
 }
 
 void * lastList(List * list) {
-    return NULL;
+  Node *aux = list->head;
+  while (aux -> next != NULL)
+    aux = aux -> next;
+    return aux;
 }
 
 void * prevList(List * list) {
+  Node *aux
     return NULL;
 }
 

@@ -9,3 +9,21 @@ Thu 28 Mar 2024 02:47:09 PM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 49ecdcb
+Thu 28 Mar 2024 02:49:35 PM UTC: 
+ list.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘lastList’:
+list.c:46:3: error: this ‘while’ clause does not guard... [-Werror=misleading-indentation]
+   46 |   while (aux -> next != NULL)
+      |   ^~~~~
+list.c:48:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘while’
+   48 |     return aux;
+      |     ^~~~~~
+list.c: In function ‘prevList’:
+list.c:53:5: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘return’
+   53 |     return NULL;
+      |     ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+f4ba280
