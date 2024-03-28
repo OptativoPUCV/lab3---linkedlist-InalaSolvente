@@ -36,7 +36,7 @@ List * createList() {
 void * firstList(List * list) {
   if (list == NULL) return NULL;
   Node*aux = list->head;
-  return aux;
+  return aux->data;
 }
 
 void * nextList(List * list) {
