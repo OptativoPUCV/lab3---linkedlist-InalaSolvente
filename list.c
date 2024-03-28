@@ -43,9 +43,9 @@ void * nextList(List * list) {
 
 void * lastList(List * list) {
   Node *aux = list->head;
-  while (aux -> next != NULL)
-    aux = aux -> next;
-    return aux;
+  while (aux -> next != NULL){
+    aux = aux -> next;}
+  return aux;
 }
 
 void * prevList(List * list) {
