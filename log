@@ -63,3 +63,14 @@ list.c:52:9: error: unused variable ‘aux’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 7f75049
+Thu 28 Mar 2024 02:54:09 PM UTC: 
+ list.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘prevList’:
+list.c:53:9: error: unused variable ‘aux’ [-Werror=unused-variable]
+   53 |   Node *aux = list->head;
+      |         ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+5120443
