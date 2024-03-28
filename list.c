@@ -34,7 +34,7 @@ List * createList() {
 
 void * firstList(List * list) {
   if (list == NULL) return NULL;
-  else return list->head;
+  else return list->head->data;
 }
 
 void * nextList(List * list) {
