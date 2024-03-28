@@ -49,7 +49,7 @@ void * lastList(List * list) {
 }
 
 void * prevList(List * list) {
-  Node *aux
+  //Node *aux = l
     return NULL;
 }
 

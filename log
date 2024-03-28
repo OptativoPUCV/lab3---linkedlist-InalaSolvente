@@ -27,3 +27,17 @@ list.c:53:5: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attrib
 cc1: all warnings being treated as errors
 Compilation failed
 f4ba280
+Thu 28 Mar 2024 02:50:38 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘lastList’:
+list.c:46:3: error: this ‘while’ clause does not guard... [-Werror=misleading-indentation]
+   46 |   while (aux -> next != NULL)
+      |   ^~~~~
+list.c:48:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘while’
+   48 |     return aux;
+      |     ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+c08634e
